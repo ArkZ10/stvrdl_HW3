@@ -123,6 +123,6 @@ Upload `submission.zip` to CodaBench and click "Add to Leaderboard".
 | NuHTC fulldata | Swin-Tiny | +all 209 training images | 0.868 | 0.5401 |
 | **NuHTC fulldata + thr=0.3** | **Swin-Tiny** | **+score threshold tuning** | **0.873** | **0.5428** |
 
-![Training Loss](![trainloss](report_figures/training_losses.png))
+![Training Loss](report_figures/training_losses.png)
 
-![Leaderboard](![LEADERBOARD](image.png))
+![Leaderboard](image.png)
