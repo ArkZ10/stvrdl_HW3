@@ -1,0 +1,11 @@
+report_figures/
+test_release/
+train/
+*.json
+*.zip
+*.pkl
+*.pth
+work_dirs/
+logs/
+__pycache__/
+*.pyc

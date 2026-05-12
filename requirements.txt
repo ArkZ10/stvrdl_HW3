@@ -1,0 +1,5 @@
+tifffile>=2023.1.23
+pycocotools>=2.0.6
+numpy>=1.23.0
+matplotlib>=3.6.0
+Pillow>=9.0.0
