@@ -1,8 +1,7 @@
-# VRDL HW3 — Cell Instance Segmentation
+# STVRDL HW3 Cell Instance Segmentation
 
 **Student ID:** 314540079  
 **Name:** Yeftha Joshua Ezekiel  
-**Public Test AP50:** 0.5428  
 
 ## Introduction
 
@@ -115,6 +114,15 @@ Upload `submission.zip` to CodaBench and click "Add to Leaderboard".
 
 ## Performance Snapshot
 
-Public leaderboard score: **0.5428** (above strong baseline 0.35)
+| Model | Backbone | Key Addition | Val AP50 | Test AP50 |
+|-------|----------|--------------|----------|-----------|
+| Mask R-CNN | ResNet-50 | Baseline | 0.423 | 0.3423 |
+| Cascade Mask R-CNN | ResNet-50 | +3-stage cascade | 0.433 | 0.3332 |
+| HTC (ResNet-50) | ResNet-50 | +semantic seg + info flow | 0.578 | 0.4511 |
+| NuHTC (178 imgs) | Swin-Tiny | +WSPN + Swin backbone | 0.590 | 0.4864 |
+| NuHTC fulldata | Swin-Tiny | +all 209 training images | 0.868 | 0.5401 |
+| **NuHTC fulldata + thr=0.3** | **Swin-Tiny** | **+score threshold tuning** | **0.873** | **0.5428** |
 
-![Leaderboard](report_figures/ablation_ap50.png)
+![Training Loss](![trainloss](report_figures/training_losses.png))
+
+![Leaderboard](![LEADERBOARD](image.png))
